@@ -31,7 +31,7 @@ echo '<?xml version="1.0" encoding="UTF-8" ?>'."\n";
 				$description = $EM_Event->output( get_option ( 'dbem_rss_description_format' ), "rss");
 				$description = ent2ncr(convert_chars($description)); //Some RSS filtering
 				$event_url = $EM_Event->output('#_EVENTURL');
-				$event_img_url = $EM_Event->output('#_EVENTIMAGE');
+				$event_img_url = $EM_Event->output('#_EVENTIMAGEURL');
 				?>
 				<item>
 					<title><?php echo $EM_Event->output( get_option('dbem_rss_title_format'), "rss" ); ?></title>
