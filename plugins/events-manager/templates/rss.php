@@ -39,7 +39,7 @@ echo '<?xml version="1.0" encoding="UTF-8" ?>'."\n";
 					<guid><?php echo $event_url; ?></guid>
 					<pubDate><?php echo $EM_Event->start(true)->format('D, d M Y H:i:s +0000'); ?></pubDate>
 					<description><![CDATA[<?php echo $description; ?>]]></description>
-					<media:content medium="image" url="<?php echo $event_img_url; ?>" />
+					<enclosure url="<?php echo $event_img_url; ?>" type="image" />
 				</item>
 				<?php
 				$count++;
