@@ -31,6 +31,8 @@ echo '<?xml version="1.0" encoding="UTF-8" ?>'."\n";
 				$description = $EM_Event->output( get_option ( 'dbem_rss_description_format' ), "rss");
 				$description = ent2ncr(convert_chars($description)); //Some RSS filtering
 				$event_url = $EM_Event->output('#_EVENTURL');
+				$event_img_url_default = $EM_Event->output('#_EVENTIMAGE');
+				$event_img_url = $EM_Event->output('#_EVENTIMAGE{900,0}');
 				?>
 				<item>
 					<title><?php echo $EM_Event->output( get_option('dbem_rss_title_format'), "rss" ); ?></title>
@@ -38,7 +40,8 @@ echo '<?xml version="1.0" encoding="UTF-8" ?>'."\n";
 					<guid><?php echo $event_url; ?></guid>
 					<pubDate><?php echo $EM_Event->start(true)->format('D, d M Y H:i:s +0000'); ?></pubDate>
 					<description><![CDATA[<?php echo $description; ?>]]></description>
-					
+					<media><?php echo $event_img_url_default ?></media>
+					<media:content medium="image" url="<?php echo $event_img_url; ?>" />
 				</item>
 				<?php
 				$count++;
