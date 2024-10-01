@@ -12,3 +12,75 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 
 /* Add your custom styles here */
+
+.event .page-header .entry-title,
+.location .page-header .entry-title,
+.woocommerce .product_title.entry-title {
+    display: block !important;
+    margin-top: 40px;
+}
+
+.woocommerce .woocommerce-breadcrumb,
+.woocommerce .woocommerce-order {
+    padding-top: 40px;
+}
+
+.woocommerce div.product p.stock,
+.product_meta .sku_wrapper {
+    display:none;
+}
+
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product p.price,
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product span.price {
+    color: var(--e-global-color-secondary);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.woopay-express-button,
+#wcpay-woopay-button .woopay-express-button,
+.woopay-express-button[data-theme=dark],
+.express-payment-method-woocommerce_payments_woopay_express_checkout .woopay-express-button{
+    background: var(--e-global-color-primary) !important;
+    border-color: var(--e-global-color-primary) !important;
+}
+
+.woocommerce span.onsale {
+    line-height: 2.8em;
+}
+
+.wc-block-components-totals-shipping .wc-block-components-totals-shipping__change-address__link {
+    color: #0E5CB5 !important;
+}
+
+.wc-block-components-totals-shipping .wc-block-components-totals-shipping__change-address__link:hover {
+    text-decoration: none;
+}
+
+.wp-block-woocommerce-cart.alignwide {
+    margin: 0;
+}
+
+.woocommerce span.onsale {
+    display: none;
+}
+
+.wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
+    display: none;
+}
+
+.wc-block-components-order-summary .wc-block-components-panel__button {
+    padding: 20px 55px 20px 55px !important;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit.alt,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.alt,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button.alt,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit.alt,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button.alt,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button.alt{
+    background-color: var(--e-global-color-primary);
+    height: 2.6rem;
+}
