@@ -27,7 +27,7 @@ echo '<?xml version="1.0" encoding="UTF-8" ?>'."\n";
 
         $args = !empty($args) ? $args : array(); /* @var $args array */
         $args = array_merge(array(
-            'scope' => '1-months',
+            'scope' => '2-months',
             'owner' => false, 
             'limit' => $page_limit, 
             'page' => 1, 
