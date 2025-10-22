@@ -84,3 +84,12 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
     background-color: var(--e-global-color-primary);
     height: 2.6rem;
 }
+
+.woocommerce-page .site-main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.woocommerce-pag .wp-element-button.wc-block-cart__submit-button {
+    color: white;
+}
